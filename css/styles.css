@@ -1,7 +1,215 @@
+:root{
+    --main-font:'Roboto', sans-serif;
+    --second-font:'Raleway', sans-serif; 
+    --main-color: #212121;
+    --color-title: #FFFFFF;
+    --text-color: #757575;
+    --color-hover: #2196F3;
+    --background-header: #FFFFFF;
+    --background-hero: #2F303A;
+    --background-section: #E5E5E5;
+    --background-content:#F5F4FA;
+    --footer-color-logo: #FFFFFF;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+/* ===================HEADER=========================*/
+
+.logo-header{
+font-family: var(--second-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.nav-link{
+font-family:var(--main-font);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: var(--main-color);
+}
+.nav-link:hover,
+.nav-link:focus{
+color: #2196F3;;
+}
+
+.header-contakt{
+font-family:var(--main-font);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.header-contakt:hover,
+header-contakt:focus{
+    color: #2196F3;
+}
+
+/*===================HERO======================*/
+
+.hero{
+    background-color: #757575;
+}
+
+.title-hero{
+font-family: var(--main-font);
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--color-title);
+}
+
+.btn-hero{
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+color: var(--color-title);
+}
+
+.peculiarities-pretitle{
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.peculiarities-text{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+.work-title{
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+/*==================Content=====================*/
+
+.content-command{
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17px;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.name-specialists{
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.profession-specialists{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18px;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+/*==================PORTFOLIO===================*/
+
+.btn-portfolio-item{
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.pretitle-content{
+font-family: var(--main-font);
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--main-color);
+}
+
+.content-text{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+
+/*=================Foote=============*/
+
+.footer{
+    background-color: #757575;
+}
+
+.logo-footer{
+font-family: var(--second-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.maps-footer{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--color-title);
+}
+
+.mail-footer{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.tel-footer{
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
