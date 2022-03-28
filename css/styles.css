@@ -42,7 +42,7 @@ color: var(--main-color);
 }
 .nav-link:hover,
 .nav-link:focus{
-color: #2196F3;
+color: var(--color-hover);
 }
 
 .header-contakt {
@@ -51,18 +51,18 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--text-color);
 }
 
 .header-contakt:hover,
-header-contakt:focus {
-    color: #2196F3;
+ header-contakt:focus {
+    color: var(--color-hover);
 }
 
 /*===================HERO======================*/
 
 .hero {
-    background-color: #757575;
+    background-color: var(--text-color);
 }
 
 .title-hero {
@@ -154,6 +154,12 @@ letter-spacing: 0.03em;
 color: var(--main-color);
 }
 
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    color: #FFFFFF;
+    background-color: var(--color-hover);
+}
+
 .pretitle-content {
 font-family: var(--main-font);
 font-style: normal;
@@ -176,7 +182,7 @@ color: var(--text-color);
 /*=================Footer=============*/
 
 .footer{
-    background-color: #757575;
+    background-color: var(--text-color);
 }
 
 .logo-footer{
