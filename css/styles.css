@@ -175,6 +175,7 @@ cursor: pointer;
 
 .peculiarities-list{
     display: flex;
+    justify-content: space-between;
 }
 
 .peculiarities-item{
@@ -211,7 +212,22 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
+display: flex;
+justify-content: center;
+
+margin-bottom: 50px;
+
+
 color: var(--main-color);
+}
+
+.img-work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.working-methods-item:not(:last-child){
+    margin-right: 30px;
 }
 
 /*==================Content=====================*/
@@ -248,6 +264,10 @@ line-height: 1.18px;
 letter-spacing: 0.03em;
 color: var(--text-color);
 }
+
+
+
+
 
 /*==================PORTFOLIO===================*/
 
@@ -286,6 +306,7 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--text-color);
 }
+
 
 /*=================Footer=============*/
 
