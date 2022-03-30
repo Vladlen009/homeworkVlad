@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
+        <div class="header-container container">
         <a class="logo-header link" href="" lang="en">WebStudio</a>
         <nav class="header-nav">
             <ul class="header-list list">
@@ -26,36 +28,40 @@
                 </li>
             </ul>
         </nav>
-        <ul class="contakt-header list">
-            <li>
+        <ul class="contakt-header-list list">
+            <li class="contakt-header-item">
                 <a class="header-contakt link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="contakt-header-item">
                 <a class="header-contakt link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+    </div>
     </header>
     <main class="main">
     <section class="hero">
+        <div class="container">
         <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="btn-hero">Заказать услугу</button>
+        </div>
     </section>
     <section class="peculiarities">
+        <div class="container">
         <h2></h2>
-        <ul class="peculiarities-item list">
-            <li>
+        <ul class="peculiarities-list list">
+            <li class="peculiarities-item">
                 <h3 class="peculiarities-pretitle">Внимание к деталям</h3>
                 <p class="peculiarities-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="peculiarities-item">
                 <h3 class="peculiarities-pretitle">Пунктуальность</h3>
                 <p class="peculiarities-text">Задача организации, вstсобенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
+            <li class="peculiarities-item">
                 <h3 class="peculiarities-pretitle">Планирование</h3>
                 <p class="peculiarities-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
+            <li class="peculiarities-item">
                 <h3 class="peculiarities-pretitle">Современные технологии</h3>
                 <p class="peculiarities-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -87,8 +93,10 @@
                 />
             </li>
         </ul>
+    </div>
         </section>
         <section class="content">
+            <div class="container">
             <h2 class="content-command">Наша команда</h2>
             <ul class="item-content list">
                 <li class="specialists-item">
@@ -132,9 +140,11 @@
                     <p lang="en" class="profession-specialists">UI Designer</p>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
 <footer class="footer">
+    <div class=" container">
     <a class="logo-footer link" href="" lang="en">WebStudio</a>
     <address class="address-footer">
         <ul class="footer-list list">
@@ -149,6 +159,7 @@
             </li>
         </ul>
     </address>
+</div>
 </footer>
 </body>
 </html>

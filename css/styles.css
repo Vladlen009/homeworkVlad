@@ -12,6 +12,27 @@
     --footer-color-logo: #FFFFFF;
 }
 
+body{
+font-family: var(--main-font);
+}
+
+img{
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
 .list {
     list-style: none;
 }
@@ -20,15 +41,46 @@
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+}
+
+
+
 /* ===================HEADER=========================*/
+.header{
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
 .logo-header {
+display: inline-block;
 font-family: var(--second-font);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+
+margin-right: 93px;
+
 color: #2196F3;
 }
+
+.header-list {
+    display: flex;
+}
+
+
 
 .header-item {
 font-family: var(--main-font);
@@ -37,12 +89,24 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 
+padding: 32px 0px;
+
 color: var(--main-color);
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+
 }
 
 .header-link:hover,
 .header-link:focus{
 color: var(--color-hover);
+}
+
+.contakt-header-list{
+    display: flex;
+    margin-left: auto;
 }
 
 .header-contakt {
@@ -59,10 +123,17 @@ color: var(--text-color);
     color: var(--color-hover);
 }
 
+.contakt-header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 /*===================HERO======================*/
 
 .hero {
     background-color: var(--text-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .title-hero {
@@ -74,6 +145,8 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
+margin-bottom: 30px;
+
 color: var(--color-title);
 }
 
@@ -83,9 +156,33 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
+
 color: var(--color-title);
+background-color: var(--color-hover);
+border-radius: 4px;
+
+padding: 10px 32px;
 
 cursor: pointer;
+}
+
+/*========================peculiarities====================*/
+
+.peculiaritie {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.peculiarities-list{
+    display: flex;
+}
+
+.peculiarities-item{
+    width: 270px;
+}
+
+.peculiarities-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .peculiarities-pretitle {
@@ -94,6 +191,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 color: var(--main-color);
 }
 
@@ -103,6 +201,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin-bottom: 94px;
 color: var(--text-color);
 }
 
@@ -116,6 +215,12 @@ color: var(--main-color);
 }
 
 /*==================Content=====================*/
+
+.content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 .content-command {
 font-family: var(--main-font);
