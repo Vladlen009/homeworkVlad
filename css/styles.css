@@ -240,6 +240,7 @@ color: var(--main-color);
 .content {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #F5F4FA;;
 }
 
 
@@ -250,6 +251,15 @@ font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 color: var(--main-color);
+
+display: flex;
+justify-content: center;
+
+}
+
+.list-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .name-specialists {
