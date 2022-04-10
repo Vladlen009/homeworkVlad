@@ -322,6 +322,7 @@ img{
 
 .work-item {
   position: relative;
+  display: flex;
   
 }
 
@@ -332,17 +333,20 @@ img{
   width: 100%;
   height: 70px;
 
-  display: inline-block;
-  flex-basis: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  
 
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+  text-transform: uppercase;
 
  
-
   letter-spacing: 0.03em;
   background: rgba(47, 48, 58, 0.8);
   color: #FFFFFF;
