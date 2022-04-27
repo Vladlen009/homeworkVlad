@@ -614,6 +614,48 @@
                     <use href="./image/icons.svg#close-icon"></use>
                 </svg>
             </button>
+
+            <form class="contact-form">
+                <label class="contact-form-field">
+                    Имя
+                    <input 
+                        name="user_name" 
+                        class="contact-form-input"
+                        type="text" />
+                </label>
+                <label class="contact-form-field">
+                    Телефон
+                    <input 
+                        name="user_phone" 
+                        class="contact-form-input" 
+                        type="tel" />
+                </label>
+                <label class="contact-form-field">
+                    Почта
+                    <input 
+                        name="user_email" 
+                        class="contact-form-input" 
+                        type="email" />
+                </label>
+                <label class="contact-form-field">
+                    Комментарий
+                    <textarea 
+                        name="user_messange" 
+                        class="contact-form-messange" 
+                        placeholder="Введите текст">
+                    </textarea>
+                </label>
+                <div class="contact-form-checkbox-wrapper">
+                    <input 
+                        name="accent-policy" 
+                        type="checkbox" 
+                        class="contact-form-checkbox" />
+                    <label class="contact-form-checkbox-label">
+                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                    </label>
+                </div>
+                <button type="submit" class="contact-form-submit-btn">Отправить</button>
+            </form>
         </div>
     </div>
    
