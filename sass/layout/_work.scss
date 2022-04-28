@@ -6,13 +6,15 @@
     display: flex;
 }
 
-.work-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .work-item {
     position: relative;
     display: flex;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
   
 .work-item-text {

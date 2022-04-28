@@ -32,6 +32,10 @@
     transform: translateY(-50%);
     display: block;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contakt-form-input:focus + &{
+        fill: var(--color-hover);
+    }
 }
 
 .contakt-form-input {
@@ -52,11 +56,6 @@
     }
 }
 
-  
-.contakt-form-input:focus + .contakt-form-input-icon{
-    fill: var(--color-hover);
-}
-  
 .contakt-form-imput-wrapper {
     position: relative;
     display: block;
@@ -158,26 +157,24 @@
         cursor: pointer;
 
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .chackbox-accept-policy:checked + & {
+            background-image: url(../image/icon-check.svg);
+            background-position: center;
+        }
+    }
+
+    .chackbox-accept-policy:focus + &::before {
+        outline: none;
+        border-color: var(--color-hover);
+    }
+
+    .chackbox-accept-policy:hover + &::before {
+        outline: none;
+        border-color: var(--color-hover);
     }
 }
 
-.chackbox-accept-policy:checked + .contact-form-checkbox-agreement::before {
-    background-image: url(../image/icon-check.svg);
-    background-position: center;
-}
-  
-.chackbox-accept-policy:focus + .contact-form-checkbox-agreement::before {
-    outline: none;
-    border-color: var(--color-hover);
-}
-
-.chackbox-accept-policy:hover + .contact-form-checkbox-agreement::before {
-    outline: none;
-    border-color: var(--color-hover);
-}
-  
-
-  
 .policy {
     font-style: normal;
     font-weight: 400;

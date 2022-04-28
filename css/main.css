@@ -186,6 +186,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-link:hover .overlay,
+.navigation-link:focus .overlay {
+  transform: translateY(0%);
+}
+
 .subscribe-name {
   margin-bottom: 20px;
   font-weight: 700;
@@ -299,13 +304,13 @@ img {
   cursor: pointer;
 }
 
+.modal-icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close-btn:hover .modal-icon-close,
 .modal-close-btn:focus .modal-icon-close {
   fill: var(--color-hover);
-}
-
-.modal-icon-close {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contakt-form-text {
@@ -339,6 +344,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contakt-form-input:focus + .contakt-form-input-icon {
+  fill: var(--color-hover);
+}
+
 .contakt-form-input {
   padding: 0;
   width: 100%;
@@ -353,10 +362,6 @@ img {
 .contakt-form-input:focus {
   outline: none;
   border-color: var(--color-hover);
-}
-
-.contakt-form-input:focus + .contakt-form-input-icon {
-  fill: var(--color-hover);
 }
 
 .contakt-form-imput-wrapper {
@@ -625,10 +630,6 @@ img {
   display: flex;
 }
 
-.section-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .section-pretitle {
   font-weight: 700;
   font-size: 14px;
@@ -650,6 +651,10 @@ img {
 .section-item {
   width: 270px;
   justify-content: center;
+}
+
+.section-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .section-image-list {
@@ -685,13 +690,13 @@ img {
   display: flex;
 }
 
-.work-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .work-item {
   position: relative;
   display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work-item-text {
@@ -909,6 +914,10 @@ img {
   color: var(--background-header);
 }
 
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .navigation-btn {
   font-weight: 500;
   font-size: 16px;
@@ -928,7 +937,8 @@ img {
   margin-right: 8px;
 }
 
-.navigation-btn:hover, .navigation-btn:focus {
+.navigation-btn:hover,
+.navigation-btn:focus {
   background-color: var(--color-hover);
   color: var(--footer-color-logo);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -988,10 +998,5 @@ img {
 .navigation-link-img {
   position: relative;
   overflow: hidden;
-}
-
-.navigation-link:hover .overlay,
-.navigation-link:focus .overlay {
-  transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */

@@ -8,9 +8,7 @@
     display: flex;
 }
   
-.section-item:not(:last-child) {
-    margin-right: 50px;
-}
+
   
 .section-pretitle {
     font-weight: 700;
@@ -36,6 +34,10 @@
 .section-item {
     width: 270px;
     justify-content: center;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
   
 .section-image-list {
