@@ -55,10 +55,28 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo-header {
@@ -69,12 +87,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-hover);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-.logo-header__dark {
+.logo-dark {
   color: var(--main-color);
 }
 
@@ -526,122 +541,105 @@ img {
   pointer-events: none;
 }
 
-.header {
-  background-color: var(--header-background);
-  border: 1px solid var(--header-boder-color);
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
 .header-list {
-  display: flex;
-  text-align: center;
-}
-
-.header-list.current {
-  color: var(--color-hover);
-}
-
-.header-list.current {
-  color: var(--color-hover);
-}
-
-.logo-header {
-  display: inline-block;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--color-hover);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.logo-dark {
-  color: var(--main-color);
-}
-
-.header-list__item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  accent-color: green;
-}
-
-.header-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-list__link {
-  position: relative;
-  display: inline-block;
-  color: var(--main-color);
-  padding: 32px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list__link:hover, .header-list__link:focus {
-  color: var(--color-hover);
-}
-
-.current::after {
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: var(--color-hover);
-  border-radius: 2px;
+  display: none;
 }
 
 .header-contact {
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 
-.header-list__mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+.header {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list__mail:hover, .header-list__mail:focus {
-  color: var(--color-hover);
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.header-list__img-icon {
-  margin-right: 10px;
-  fill: currentColor;
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100wh;
+  overflow: auto;
+  background-color: antiquewhite;
 }
 
-.header-list__tel {
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu__nav-list {
+  padding-bottom: 306px;
+}
+
+.mobile-menu__nav-item {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--main-color);
 }
 
-.header-list__tel:hover, .header-list__tel:focus {
-  color: var(--color-hover);
+.mobile-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contact-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding-bottom: 64px;
+}
+
+.mobile-menu__social-list {
+  display: flex;
+}
+
+.mobile-menu__social-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu__social-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .hero {
