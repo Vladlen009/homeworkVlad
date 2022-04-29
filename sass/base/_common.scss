@@ -9,17 +9,19 @@ body {
   ul {
     margin: 0;
     padding: 0;
-}
+  }
   
   
-.list {
+  .list {
     list-style: none;
-}
+  }
   
-.link {
+  .link {
     text-decoration: none;
-}
+  }
   
-img {
+  img {
     display: block;
-}
+    max-width: 100%;
+    height: auto;
+  }

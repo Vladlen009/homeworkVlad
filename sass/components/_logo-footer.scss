@@ -1,4 +1,8 @@
-.logo-footer {
+.logo-white {
+    color:var(--footer-color-logo);
+  }
+  
+  .logo-footer {
     display: inline-block;
     
     font-family: Raleway;
@@ -10,8 +14,4 @@
     color: var(--color-hover);
     
     margin-bottom: 20px;
-}
-
-.logo-white {
-    color:var(--footer-color-logo);
   }
